@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معهد الأمام ابن تيمية للعلوم الشرعية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/معهد ابن تيمية .png">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-align: right;
+        }
+        body {
+            background-color: #efe9d9;
+        }
+        header img {
+            width: 100px;
+            border-radius: 50%;
+        }
+        header {
+            display: flex;
+            padding: 5px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header ul {
+            display: flex;
+            list-style: none;
+        }
+        header ul li a {
+            padding-left: 60px;
+            text-decoration: none;
+            color: #705c30;
+            font-size: 22px;
+        }
+        .main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .main h1 {
+            padding-bottom: 35px;
+            color: #705c30;
+        }
+        .main p {
+            padding-bottom: 35px;
+            color: #705c30;
+        }
+        .btn-c {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .animated-button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 16px 36px;
+            border: 4px solid;
+            border-color: transparent;
+            font-size: 16px;
+            border-radius: 100px;
+            font-weight: 600;
+            color: #705c30;
+            box-shadow: 0 0 0 2px #ffffff;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .animated-button svg {
+            position: absolute;
+            width: 24px;
+            fill: #705c30;
+            z-index: 9;
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .animated-button .arr-1 {
+            right: 16px;
+        }
+        .animated-button .arr-2 {
+            left: -25%;
+        }
+        .animated-button .circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background-color: #ffeebe;
+            border-radius: 50%;
+            opacity: 0;
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .animated-button .text {
+            position: relative;
+            z-index: 1;
+            transform: translateX(-12px);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .animated-button:hover {
+            box-shadow: 0 0 0 12px transparent;
+            color: #212121;
+            border-radius: 12px;
+        }
+        .animated-button:hover .arr-1 {
+            right: -25%;
+        }
+        .animated-button:hover .arr-2 {
+            left: 16px;
+        }
+        .animated-button:hover .text {
+            transform: translateX(12px);
+        }
+        .animated-button:hover svg {
+            fill: #705c30;
+        }
+        .animated-button:active {
+            scale: 0.95;
+            box-shadow: 0 0 0 4px #705c30;
+        }
+        .animated-button:hover .circle {
+            width: 220px;
+            height: 220px;
+            opacity: 1;
+        }
+        .courses-section {
+            padding: 20px;
+        }
+        .courses-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .course-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 48%;
+            
+        }
+        .course-card h3 {
+            color: #705c30;
+            margin-bottom: 10px;
+        }
+        .course-card p {
+            color: #555;
+        }
+        .courses-container {
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            header ul {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            .main h1 {
+                font-size: 20px;
+            }
+            .main p, .course-card p {
+                font-size: 14px;
+            }
+            .animated-button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            .course-card {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="img/معهد ابن تيمية .png" alt="logo"></div>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61568295940178">الصفحة على الفيس بوك</a>
+                <a href="https://t.me/+2gkW1NHyoFYyM2Zk">الصفحة على التيلجرام</a>
+                <a href="https://chat.whatsapp.com/CbqNb7msAHhGaXjagYdNA4">الصفحة على الواتس اب</a>
+            </li>
+        </ul>
+    </header>
+    <section class="main">
+        <h1>معهد الأمام ابن تيمية للعلوم الشرعية</h1>
+        <p>
+            أهلًا وسهلًا بكم في معهد ابن تيمية للعلوم الشرعية. يهدف معهدنا إلى تقديم العلوم الشرعية بأسلوب متكامل ومبسط، لتمكين الطلبة من فهم أصول الدين الإسلامي وتعزيز الوعي الديني. من خلال هذه الدورة، ستنطلقون في رحلة علمية تجمع بين الفهم العميق والشامل للمعارف الإسلامية، مع التركيز على القيم والمبادئ الأصيلة.
+            <br>
+            تشمل الدورة مجموعة من الكتب الأساسية المختارة بعناية، والتي ستساعدكم في بناء قاعدة علمية قوية وفهم أعمق لتطبيقات الدين في حياتنا اليومية.
+            <br>
+            نتمنى لكم تجربة علمية ثرية وممتعة، ونسعد بانضمامكم إلى هذه الرحلة المباركة.
+        </p>
+    </section>
+    <section class="courses-section">
+        <h2 style="color: #705c30; padding-bottom: 15px;">مجالات الدورة</h2>
+        <div class="courses-container">
+            <div class="course-card">
+                <h3>علم الحديث</h3>
+                <p>الكتاب المقرر: الأربعين النووية</p>
+            </div>
+            <div class="course-card">
+                <h3>السيرة النبوية</h3>
+                <p>المتن المقرر: المنظومة المنيرة</p>
+            </div>
+            <div class="course-card">
+                <h3>العقيدة</h3>
+                <p>الكتاب المقرر: العقيدة الواسطية</p>
+            </div>
+            <div class="course-card">
+                <h3>الفقه</h3>
+                <p>الكتاب المقرر : سفينة النجاة</p>
+            </div>
+        </div>
+    </section>
+    <div class="btn-c">
+        <span></span>
+        <a style="text-decoration: none;" href="https://t.me/+2gkW1NHyoFYyM2Zk">
+        <button class="animated-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+            <span class="text">الانضمام إلى المعهد مجانًا</span>
+            <span class="circle"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+        </button>
+    </a>
+    </div>
+</body>
+</html>
